@@ -1,5 +1,3 @@
-const users = require("../data/data");
-
 const User = require("../models/User");
 
 const getAllUsersService = async () => {

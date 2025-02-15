@@ -7,7 +7,10 @@ const {
   deletedUserService,
 } = require("../services/userService");
 
-const { userSchema } = require("../validations/validations.User");
+const {
+  userSchema,
+  userUpdateSchema,
+} = require("../validations/validations.User");
 
 const getAllUsersController = async (req, res) => {
   try {
@@ -31,7 +34,7 @@ const getUserByIdController = async (req, res) => {
 const updateUserController = async (req, res) => {
   try {
     const { id } = req.params;
-    const updateData = userSchema.parse(req.body);
+    const updateData = userUpdateSchema.parse(req.body);
     const updateUser = await updateUserService(id, updateData);
     res.status(201).json({ message: "Successfully updated user", updateUser });
   } catch (error) {

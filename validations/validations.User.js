@@ -6,4 +6,10 @@ const userSchema = z.object({
   age: z.number(),
 });
 
-module.exports = { userSchema };
+const userUpdateSchema = z.object({
+  name: z.string().optional(),
+  email: z.string().email().optional(),
+  age: z.number().optional(),
+});
+
+module.exports = { userSchema, userUpdateSchema };

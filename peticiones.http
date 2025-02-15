@@ -4,13 +4,13 @@ GET http://localhost:3000/users
 ###// BUSCAR UN USUARIO POR ID
 GET http://localhost:3000/users/67b0689ce0cbb563db46f3a2
 ###//MODIFICAR UN USUARIO
-PATCH http://localhost:3000/users/67b068b2e0cbb563db46f3a5
+PATCH http://localhost:3000/users/67b095daf91247f4fda8da5e
 Content-Type: application/json
 
 {
-    "name":"Juan",
-    "email":"juan@mail.com",
-    "age":36
+
+    "email":"juan@mail.com"
+
 }
 
 ###//AGREGAR UN USUARIO
