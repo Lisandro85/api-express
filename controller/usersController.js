@@ -56,7 +56,7 @@ const deletedUserController = async (req, res) => {
     const result = await deletedUserService(id);
     return res.status(200).json(result);
   } catch (error) {
-    if (error.message === "Nonexistent User") {
+    if (error.message === "User not found") {
       return res.status(404).json({ message: error.message });
     }
     return res.status(500).json({ message: "Internal Server Error" });
