@@ -30,7 +30,7 @@ Este es un proyecto de API REST para realizar operaciones CRUD de usuarios, desa
    DB_PASSWORD=tu_contraseña
    DB_CLUSTER=tu_cluster
    ```
-   **Nota:** No olvides de configurar tu URI de MongoDB correctamente.
+   **Nota:** No olvides de configurar tu URI de MongoDB correctamente en la carpeta config/dbCon.js.
 
 
 ## Uso
