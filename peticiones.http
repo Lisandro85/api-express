@@ -1,0 +1,27 @@
+### //TRAER TODOS LOS USUARIOS
+GET http://localhost:3000/users
+
+###// BUSCAR UN USUARIO POR ID
+GET http://localhost:3000/users/67b0689ce0cbb563db46f3a2
+###//MODIFICAR UN USUARIO
+PATCH http://localhost:3000/users/67b068b2e0cbb563db46f3a5
+Content-Type: application/json
+
+{
+    "name":"Juan",
+    "email":"juan@mail.com",
+    "age":36
+}
+
+###//AGREGAR UN USUARIO
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name":"Sofia",
+    "email":"sofia@mail.com",
+    "age":50
+}
+
+###
+DELETE  http://localhost:3000/users/67b068d4e0cbb563db46f3a7
